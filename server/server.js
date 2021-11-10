@@ -18,7 +18,7 @@ var blockchain = new blockchainFile.Blockchain();
 
 
 
-app.get("/mineblock", (req,res)=>{
+app.post("/mineblock", (req,res)=>{
 
     var previous_block =  blockchain.chain.slice(-1)[0];
     var previous_hash =  blockchain.hash(previous_block)
