@@ -58,6 +58,6 @@ app.get("/getchain", (req,res)=>{
 app.get("/setDifficulty",(req,res)=>{
 
   blockchain.block_difficulty = req.body.block_difficulty;
-  res.send(block_difficulty);
+  res.send(blockchain.block_difficulty);
 
 })
