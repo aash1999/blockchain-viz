@@ -8,7 +8,7 @@ class Blockchain{
         var date =new Date();
         date = date.toString();
         this.create_block("0" , 1 , 1 ,  "Genesis Block , Created By Aakash Singh", date);
-        this.block_difficulty =4;
+        this.block_difficulty =5;
     }
 
     create_block(previous_hash  , nonce , block_index  , data ,timestamp ){
@@ -43,7 +43,7 @@ class Blockchain{
             block.nonce= nonce;
             var hash_operation = this.hash(block);
 
-            if(hash_operation.slice(0,this.block_difficulty) == '0000'){
+            if(hash_operation.slice(0,this.block_difficulty) == '0'.repeat(this.block_difficulty)){
                 check_proof = true;
             }else{
                 nonce+=1;
