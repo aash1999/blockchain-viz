@@ -43,7 +43,7 @@ class Blockchain{
             block.nonce= nonce;
             var hash_operation = this.hash(block);
 
-            if(hash_operation.slice(0,this.block_difficulty) == '00000'){
+            if(hash_operation.slice(0,this.block_difficulty) == '0000'){
                 check_proof = true;
             }else{
                 nonce+=1;
@@ -53,6 +53,21 @@ class Blockchain{
 
         return nonce;
 
+    }
+
+    is_valid_chain(){
+        var index = 1;
+
+        while(index< this.chain.length){
+
+            if(this.hash(this.chain[index-1]) != this.chain[index].previous_hash){
+                return false;
+            }
+
+            index+=1;
+
+        }
+        return true;
     }
 
     
