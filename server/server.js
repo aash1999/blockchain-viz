@@ -1,6 +1,7 @@
 //const bodyParser = require("body-parser");
 const { response } = require("express");
 const express = require("express");
+const cors=require("cors");
 
 const PORT = process.env.PORT || 5000;
 
@@ -8,9 +9,19 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 //app.use(express.json());
 
+const corsOptions ={
+  origin:'*', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions)) // Use this after the variable declaration
+
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+
 
 
 var blockchainFile = require("./blockchain.js")
@@ -59,5 +70,16 @@ app.get("/setDifficulty",(req,res)=>{
 
   blockchain.block_difficulty = req.body.block_difficulty;
   res.send(blockchain.block_difficulty);
+
+})
+
+app.post("/getPreviousBlock",(req,res)=>{
+  console.log("/getPreviousBlock Called")
+  var response = {
+    hash : blockchain.hash(blockchain.chain.slice(-1)[0]),
+    blockIndex : blockchain.chain.slice(-1)[0].index +1 ,
+
+  }
+  res.send(response);
 
 })
