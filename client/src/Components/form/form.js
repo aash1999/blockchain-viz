@@ -65,7 +65,7 @@ function Form(){
 
                                 <div className = "form-heading">New Block</div>
                                 <div className = "block-index">Index : {blockIndex}</div>
-                                <div className = "previous-hash">Previous Block : {previousHash}</div>
+                                <div className = "previous-hash">Previous Block : <span><p>{previousHash}</p></span></div>
                                 <label for="data">Data : </label><br></br>
                                 <textarea 
                                         name="message" 
@@ -75,10 +75,8 @@ function Form(){
                                         onChange = {(e)=>setData(e.target.value)}
                                 ></textarea><br></br>
                                 <button type="submit" >Submit</button>
-
                             </form>
-
-                        </div>)
+                </div>)
             
 
 
