@@ -37,7 +37,7 @@ function Form(){
     useEffect( () => {
         fetchLoadData();
            
-      });
+      },[]);
     
     
     function MineBlock(){
