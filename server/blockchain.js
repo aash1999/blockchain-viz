@@ -7,8 +7,18 @@ class Blockchain{
         this.chain=new Array();
         var date =new Date();
         date = date.toString();
-        this.create_block("0" , 1 , 1 ,  "Genesis Block , Created By Aakash Singh", date);
+        var genesisBlock = {
+            index : 1,
+            timestamp:date,
+            nonce:0,
+            previous_hash:'0',
+            data:"Genesis Block , Created By Aakash Singh",
+
+        }
         this.block_difficulty =5;
+        genesisBlock.nonce = this.proof_of_work(genesisBlock)
+        this.create_block("0" , genesisBlock.nonce, 1 ,  "Genesis Block , Created By Aakash Singh", date);
+        
     }
 
     create_block(previous_hash  , nonce , block_index  , data ,timestamp ){

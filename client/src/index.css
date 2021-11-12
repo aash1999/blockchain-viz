@@ -6,9 +6,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("../src/images/image1.jpeg"); */
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* background-color: #121212; */
+  background-color: #1e1e1e;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.back-img{
+  background-image: url("./images/image2.png");
+  width: 500px;
+  height : 500px;
+  background-repeat: no-repeat;
+  position: absolute;
+  /* z-index: -1; */
+  /* bottom:53vh;
+  left: 30%; */
+  /* top:1000px; */
+  top: 40%;
+  left : 30%;
+  z-index: -1;
 }

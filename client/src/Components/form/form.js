@@ -62,19 +62,29 @@ function Form(){
     if(isMining == false){
        return(<div className = "form-container" >
                                 <form   id="new-block-mine"  onSubmit = {MineBlock}>
-
+                                <div className = "card-header"></div>
                                 <div className = "form-heading">New Block</div>
-                                <div className = "block-index">Index : {blockIndex}</div>
-                                <div className = "previous-hash">Previous Block : <span><p>{previousHash}</p></span></div>
-                                <label for="data">Data : </label><br></br>
-                                <textarea 
-                                        name="message" 
-                                        rows="10" 
-                                        cols="30"
-                                        value = {data}
-                                        onChange = {(e)=>setData(e.target.value)}
-                                ></textarea><br></br>
-                                <button type="submit" >Submit</button>
+                                <div className = "form-card" >
+                                    {/* <div className = "block-index">Index : {blockIndex}</div> */}
+                                    <div className = "previous-hash">Previous Block<span><p className = "hash">{previousHash}</p></span></div>
+                                    <label for="data">Data</label><br></br>
+                                    <textarea 
+                                            className="text-box"
+                                            name="message" 
+                                            rows="10" 
+                                            cols="30"
+                                            autoCorrect="off"
+                                            spellCheck= "false"
+                                            maxLength ="100"
+                                            value = {data}
+                                            onChange = {(e)=>setData(e.target.value)}
+                                    ></textarea>
+                                    <div className= "text-bottom"></div>
+                                    <br></br>
+
+                                </div>
+
+                                <button type="submit" >Mine</button>
                             </form>
                 </div>)
             

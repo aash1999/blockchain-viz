@@ -1,4 +1,5 @@
 .flex-container {
+    /* background-image: url(./images/image1.jpeg); */
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
@@ -17,3 +18,11 @@
     /* padding: 10px; */
     flex: 50%;
   }
+
+  .footer{
+      height: 100px;
+      width: 100%;
+      /* background-color: black; */
+  }
+
+  

@@ -23,6 +23,8 @@ function App() {
         <Form className = "flex-left"/>
         <ChainList className = "flex-right"/>
       </div>
+      {/* <div className="back-img"></div> */}
+      <div className="footer"></div>
       
     </div>
   );
