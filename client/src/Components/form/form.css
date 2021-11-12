@@ -11,6 +11,7 @@
     display: inline-block;
     /* top: -20px; */
     text-align: center;
+    /* padding : 10px; */
 
 }
 
@@ -42,13 +43,14 @@
 
 .form-card{
     text-align: center;
-    border-style: solid;
+    border-style: dotted;
     border-width: 0.3px;
     border-radius: 10px;
     /* border-color: #6B6BF1; */
     border-color: #13674F;
     width: 50%;
     margin: 0 auto;
+    padding : 10px;
 
 }
 
@@ -65,9 +67,20 @@ textarea.form-control {
     /* border-color:#63AEEB; */
     /* background-color: #1e1e1e; */
     background-color: #252525;
-    border-color: #1e1e1e;
+    /*border-color: #1e1e1e; */
+    border : none;
     resize: none;
     color: blanchedalmond;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
 
     
+}
+.data{
+    /* padding : 10px; */
+    margin-bottom: 10px;
+    /* border-style: dotted; */
+    border-bottom: dotted;
+    border-width: 1px;
 }

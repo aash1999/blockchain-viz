@@ -66,8 +66,8 @@ function Form(){
                                 <div className = "form-heading">New Block</div>
                                 <div className = "form-card" >
                                     {/* <div className = "block-index">Index : {blockIndex}</div> */}
-                                    <div className = "previous-hash">Previous Block<span><p className = "hash">{previousHash}</p></span></div>
-                                    <label for="data">Data</label><br></br>
+                                    {/* <div className = "previous-hash">Previous Block<span><p className = "hash">{previousHash}</p></span></div> */}
+                                    <label className="data">Data</label><br></br>
                                     <textarea 
                                             className="text-box"
                                             name="message" 

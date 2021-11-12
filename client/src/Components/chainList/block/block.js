@@ -9,13 +9,25 @@ function Block(props){
     return(
         <div className = "block-container">
             <div>
-                <div className= "index">{props.blockData.index}</div>
-                <div className= "previous-hash">previous block : {props.blockData.previous_hash}</div>
-                <div className= "time">{props.blockData.timestamp.slice(0,25)}</div>
-                <div className= "nonce">Nonce {props.blockData.nonce}</div>
-                <div className= "data">Data</div>
+                <div className="block-header">
+                    <div className= "block-previous-hash">previous block : {props.blockData.previous_hash}</div>
+                    <div className= "index">{props.blockData.index}</div>
+
+                </div>
+                <div className="block-body">
+                    <div className = "block-body-left">
+                        <div className= "time">{props.blockData.timestamp.slice(0,25)}</div>
+                        <div className= "nonce">Nonce {props.blockData.nonce}</div>
+                    </div>
+                    <div className = "block-body-right">
+                        {/* <div className= "data">Data</div> */}
+                        <div className= "data-body">{props.blockData.data}</div>
+
+                    </div>
+
+                </div>
+                
                 {/* <div className= "data-body">{props.blockData.data .replace(" ",newline)}</div> */}
-                <div className= "data-body">{props.blockData.data}</div>
             </div>
         </div>
     )
