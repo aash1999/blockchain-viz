@@ -11,11 +11,6 @@ import Axios from 'axios';
 function App() {
 
   
-  
-  
-    //alert("hi");
-  
-
   return (
     <div >
       <Header/>
@@ -23,9 +18,7 @@ function App() {
         <Form className = "flex-left"/>
         <ChainList className = "flex-right"/>
       </div>
-      {/* <div className="back-img"></div> */}
-      {/* <div className="footer"></div> */}
-      <div className = "cross-line"></div>
+       <div className = "cross-line"></div>
     </div>
   );
 }

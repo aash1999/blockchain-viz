@@ -1,5 +1,5 @@
 import "./block.css"
-//import React from "react";
+
 import React, { useState ,useEffect} from 'react';
 
 function Block(props){
@@ -20,14 +20,11 @@ function Block(props){
                         <div className= "nonce">Nonce : {props.blockData.nonce}</div>
                     </div>
                     <div className = "block-body-right">
-                        {/* <div className= "data">Data</div> */}
                         <div className= "data-body">{props.blockData.data}</div>
-
                     </div>
 
                 </div>
                 
-                {/* <div className= "data-body">{props.blockData.data .replace(" ",newline)}</div> */}
             </div>
         </div>
     )

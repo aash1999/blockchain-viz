@@ -103,24 +103,6 @@ function Form(){
         return(
             
             <div className = "form-container" >
-                {/* <div className = "loading-flex">
-                    <h1 className = "mining-heading">Mining </h1>
-                    <div className="back-img"></div>
-                </div>
-                <ProgressBar
-                    width="400px"
-                    height="10px"
-                    rect
-                    fontColor="#04C1B7"
-                    percentage="99"
-                    rectPadding="1px"
-                    rectBorderRadius="20px"
-                    trackPathColor="transparent"
-                    bgColor="#04C1B7"
-                    trackBorderColor="grey"
-                />
-                <div>non : {nonceCount}</div> */}
-
                 <div className =  "loading-pos">
                     <div className = "loading-flex">
                         <h1 className = "mining-heading">Mining . . . </h1>

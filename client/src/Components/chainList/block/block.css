@@ -1,28 +1,12 @@
 .block-container{
     width: auto;
     height: auto;
-    /* background-color: black; */
-    /* margin-top: 10px; */
-    /* margin-left: 10px; */
-    /* margin-right: 8px; */
-    /* border-style: solid; */
-    /* border-width: 0.8px; */
     text-align: center;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    /* background-color: rgba(25,25,112,0.5); */
-    /* background-color: rgba(31,29,29,1); */
-    /* background-color: #1abc9c; */
     background-color: #252525;
     color: white;
-    /* border-style: solid;
-    border-width: 1px;
-    border-color: #1abc9c; */
-    /* -moz-backface-visibility: ; */
-    /* margin-bottom: 10vh; */
-    /* display: inline-block; */
-    /* top: -20px; */
 
 
 }

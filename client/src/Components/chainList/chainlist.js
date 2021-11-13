@@ -1,6 +1,6 @@
 import "./chainlist.css"
 import Block from "./block/block.js"
-//import React from "react";
+
 import React, { useState ,useEffect} from 'react';
 
 function ChainList(){
@@ -23,32 +23,15 @@ function ChainList(){
                 .then(response => response.json(),err => console.log('TCL : err',err))
                 .then((data)=>{ 
                     setChain(data.chain);
-                    // setChain([{index :2 ,
-                    //     previous_hash : 'sdjksfjkd',
-
-                        
-                    // }])
-                    // var tempchain = chain.map((block,index)=>{
-                    //     return(
-                    //         <Block blockData = {block}/>
-                    //     )
-
-                    // })
-                    // setChainList(tempchain)
-
                     console.log(data);
                 });
 
     }
-    // var chainList= []
+
     useEffect( () => {
-        // if(listUpdated == false){
+
             fetchChain();
             setListUpdated(true);
-        // }
-
-        
-           
       },[]);
 
     
@@ -57,13 +40,11 @@ function ChainList(){
     return(
         
         <div className = "chainList-container" >
-           
-            {/* <Block/> */}
-            {/* {chainList} */}
+
             {
                 chain.map((block,index)=>(
-                <Block blockData = {block}/>
-    ))
+                    <Block blockData = {block}/>
+                ))
             }
 
         </div>
