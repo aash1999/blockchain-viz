@@ -24,8 +24,8 @@ function App() {
         <ChainList className = "flex-right"/>
       </div>
       {/* <div className="back-img"></div> */}
-      <div className="footer"></div>
-      
+      {/* <div className="footer"></div> */}
+      <div className = "cross-line"></div>
     </div>
   );
 }

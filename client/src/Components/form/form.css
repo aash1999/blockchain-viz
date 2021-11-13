@@ -97,3 +97,52 @@ textarea.form-control {
     color : #13674F;
     border-radius: 4px;
 }
+
+.loading-flex{
+    display : flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.mining-heading{
+    flex : 50%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 0px;
+    /* width :  */
+}
+
+.progress-bar{
+    flex:50%;
+}
+
+.back-img{
+
+    /* background-image: url("./images/image2.png"); */
+    background-image: url("../../images/blockchaingif.gif");
+    /* background-image : url("./images/blockchain_illustration.gif"); */
+    /* width: 300px;
+    /* height : 30vh; <-uncomment later */
+    width : 50vw;
+    height : 50vh;
+    /* scale: 0.2; */
+    /* object-fit: contain; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* z-index: -1; */
+    /* bottom:53vh;
+    left: 30%; */
+    /* top:1000px; */
+    top: 37.5vh;
+    left : 42vw;
+    z-index: -1;
+  }
+
+  .loading-pos{
+      position: absolute;
+      top :40vh;
+      left : 42vw;
+
+  }

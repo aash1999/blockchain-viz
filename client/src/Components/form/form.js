@@ -1,6 +1,7 @@
 import "./form.css"
 //import React from "react";
 import React, { useState ,useEffect} from 'react';
+import ProgressBar from 'react-animated-progress-bar';
 
 function Form(){
     //var blockIndex = 1;
@@ -58,6 +59,7 @@ function Form(){
     
 
     }
+    var [nonceCount ,setNonceCount]= useState(1);
 
     if(isMining == false){
        return(<div className = "form-container" >
@@ -83,18 +85,64 @@ function Form(){
                                     <br></br>
 
                                 </div>
+                                {/* <div className="back-img"></div> */}
+
 
                                 <button  className="mine-button" type="submit" >Mine</button>
                             </form>
+                            
+                            
+                            {/* <div className="back-img"></div> */}
+
                 </div>)
             
 
 
     }else{
+        // setNonceCount(nonceCount+1);
         return(
+            
             <div className = "form-container" >
-                <h1>Mining </h1>
-                <div className="back-img"></div>
+                {/* <div className = "loading-flex">
+                    <h1 className = "mining-heading">Mining </h1>
+                    <div className="back-img"></div>
+                </div>
+                <ProgressBar
+                    width="400px"
+                    height="10px"
+                    rect
+                    fontColor="#04C1B7"
+                    percentage="99"
+                    rectPadding="1px"
+                    rectBorderRadius="20px"
+                    trackPathColor="transparent"
+                    bgColor="#04C1B7"
+                    trackBorderColor="grey"
+                />
+                <div>non : {nonceCount}</div> */}
+
+                <div className =  "loading-pos">
+                    <div className = "loading-flex">
+                        <h1 className = "mining-heading">Mining . . . </h1>
+                        <ProgressBar
+                            className = "progress-bar"
+                            width="20vw"
+                            height="10px"
+                            rect
+                            // fontColor="#04C1B7"
+                            fontColor="black"
+                            percentage="99"
+                            rectPadding="1px"
+                            rectBorderRadius="20px"
+                            trackPathColor="transparent"
+                            // bgColor="#04C1B7"
+                            bgColor="black"
+                            trackBorderColor="grey"
+                        />
+
+                    </div>
+
+                </div>
 
             </div>
             )

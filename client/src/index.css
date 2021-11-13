@@ -18,22 +18,4 @@ code {
     monospace;
 }
 
-.back-img{
-  /* background-image: url("./images/image2.png"); */
-  background-image: url("./images/blockchaingif.gif");
-  /* background-image : url("./images/blockchain_illustration.gif"); */
-  width: 500px;
-  height : 500px;
-  /* scale: 0.2; */
-  /* object-fit: contain; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  /* z-index: -1; */
-  /* bottom:53vh;
-  left: 30%; */
-  /* top:1000px; */
-  top: 40%;
-  left : 30%;
-  z-index: -1;
-}
+

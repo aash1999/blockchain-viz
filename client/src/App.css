@@ -20,9 +20,24 @@
   }
 
   .footer{
-      height: 100px;
+      height: 50px;
       width: 100%;
       /* background-color: black; */
+  }
+
+  .cross-line{
+    width: 60%;
+    height : 112vh;
+    border-right-style:solid ;
+    border-right-width: 1px;
+    border-color: black;
+    transform: rotate(23deg);
+    z-index: -1;
+    position: absolute;
+    top:-31.5%;
+    left: -5.5%;
+
+
   }
 
   
