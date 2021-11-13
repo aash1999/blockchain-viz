@@ -17,7 +17,7 @@ function Block(props){
                 <div className="block-body">
                     <div className = "block-body-left">
                         <div className= "time">{props.blockData.timestamp.slice(0,25)}</div>
-                        <div className= "nonce">Nonce {props.blockData.nonce}</div>
+                        <div className= "nonce">Nonce : {props.blockData.nonce}</div>
                     </div>
                     <div className = "block-body-right">
                         {/* <div className= "data">Data</div> */}

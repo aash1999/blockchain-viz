@@ -19,9 +19,14 @@ code {
 }
 
 .back-img{
-  background-image: url("./images/image2.png");
+  /* background-image: url("./images/image2.png"); */
+  background-image: url("./images/blockchaingif.gif");
+  /* background-image : url("./images/blockchain_illustration.gif"); */
   width: 500px;
   height : 500px;
+  /* scale: 0.2; */
+  /* object-fit: contain; */
+  background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   /* z-index: -1; */

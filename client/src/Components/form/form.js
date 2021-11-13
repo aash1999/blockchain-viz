@@ -84,7 +84,7 @@ function Form(){
 
                                 </div>
 
-                                <button type="submit" >Mine</button>
+                                <button  className="mine-button" type="submit" >Mine</button>
                             </form>
                 </div>)
             
@@ -94,6 +94,8 @@ function Form(){
         return(
             <div className = "form-container" >
                 <h1>Mining </h1>
+                <div className="back-img"></div>
+
             </div>
             )
     }
